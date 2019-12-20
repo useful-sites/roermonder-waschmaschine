@@ -1,6 +1,4 @@
 
-
-<!--
 <label for="stateselect">Is the Machine Running?</label>
 <select  id="stateselect"  onchange="getState(this)">
     <option value="">--Please choose the state--</option>
@@ -16,39 +14,3 @@ function getState(selectObject) {
     return value;
 }
 </script>
--->
-<script>
-function changeText(){
-	document.getElementById('boldStuff').innerHTML = getState("stateselect");
-}
-</script>
-
-<p>Welcome to the site <b id='boldStuff'>dude</b> </p>
-<input type='button' onclick='changeText()' value='Change Text'/>
-<body>
-  <label for="storeSelect">Nearest Store</label>
-  <select id="nearestStore">
-    <option value="noSelection">Please Select</option>
-    <option value="Lowestoft">Lowestoft</option>
-    <option value="GtYarmouth">Gt Yarmouth</option>
-    <option value="Norwich">Norwich</option>
-    <option value="Diss">Diss</option>
-  </select>
-
-  <div id="phoneNumber"></div>
-
-  <script>
-    var nearestStore = document.getElementById("nearestStore"),
-        phoneNumber = document.getElementById("phoneNumber"),
-        stores = {
-          noSelection: "",
-          Lowestoft: "12345678",
-          GtYarmouth: "222 444 666",
-          Norwich: "999 999 999",
-          Diss: "0000000000000"
-        }
-
-    nearestStore.onchange = function(){
-      phoneNumber.innerHTML = stores[this.value];
-    }
-  </script>
