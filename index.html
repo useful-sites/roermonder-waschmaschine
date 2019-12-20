@@ -54,3 +54,27 @@
     s.Close();
  }
  </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCnLU5As572nBjEltxGCUcB0QPk0hr1t5o",
+    authDomain: "roermonder-waschmaschine.firebaseapp.com",
+    databaseURL: "https://roermonder-waschmaschine.firebaseio.com",
+    projectId: "roermonder-waschmaschine",
+    storageBucket: "roermonder-waschmaschine.appspot.com",
+    messagingSenderId: "205630033785",
+    appId: "1:205630033785:web:445985cb7be7392a1aa9a8",
+    measurementId: "G-YJDXZ3SGR1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
