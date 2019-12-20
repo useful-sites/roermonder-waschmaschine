@@ -1,16 +1,15 @@
 
 <label for="stateselect">Is the Machine Running?</label>
-<select  id="stateselect"  onchange="getState(this)">
+<select  id="stateselect"  onchange="copy()">
     <option value="">--Please choose the state--</option>
     <option value="Free">Free</option>
     <option value="Busy">Busy</option>
 </select>
 
-<p id="demo"> state</p>
+<div id="label"></div>
 
 <script>
-function getState(selectObject) {
-    var value = selectObject.value;
-    return value;
+function copy() {
+    document.getElementById("label").innerHTML = document.getElementById("stateselect").value
 }
 </script>
